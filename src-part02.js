@@ -7,8 +7,8 @@ var join = function(arr, delimiter){
     
     var output = '';
     for(var i=0; i<arr.length; i++){
-        output+=arr[i]+delimiter;
-        // i===arr.length-1?output=output-=delimiter
+        // output+=arr[i]+delimiter;
+        i===arr.length-1?output=output+=arr[i]:output+=arr[i]+delimiter;
     }
     typeof delimiter !== 'string'?output =false :output=output;
     return output;
